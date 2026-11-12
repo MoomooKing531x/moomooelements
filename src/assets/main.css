@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Hammersmith One', sans-serif;
+  --color-brand-green: #3b472d;
+  --shadow-bottom: 0 1vh #c4c4c4;
+  --background-color: #b6db66;
+  --background-filter-color: rgba(0, 0, 70, 0.35);
+  --button-color: #7ee559;
+  --button-hover-color: #6fc94e;
+  --library-item-color: #586b43;
+  --library-item-hover-color: #657850;
+  --player-colour-border: #525252;
+  --input-color: #4a4a4a;
+  --input-background: #e5e3e3;
+  --scrollbar-thumb: #8b8b8b;
+  --scrollbar-thumb-hover: #636363;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  font-family: var(--font-sans);
+  background-color: var(--color-brand-green);
+  user-select: none;
+  font-size: clamp(14px, 1vw, 16px);
+
+  @apply antialiased;
+}
+
+#app {
+  height: 100%;
+}
